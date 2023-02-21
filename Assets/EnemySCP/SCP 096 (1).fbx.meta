@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 33b0ebd84522f044bb4a2b4ec4815897
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 3246612614872467968
+    second: Object_6|scp096_skeleton|attack1_Object_6
+  - first:
+      74: -8640330602751741393
+    second: Object_6|scp096_skeleton|attackjump_Object_6
+  - first:
+      74: 7415078344382278023
+    second: Object_6|scp096_skeleton|attackrun_Object_6
+  - first:
+      74: -1622900525644694383
+    second: Object_6|scp096_skeleton|attackrunstart_Object_6
+  - first:
+      74: -4352086304238886943
+    second: Object_6|scp096_skeleton|getup2_Object_6
+  - first:
+      74: -7055733267037680056
+    second: Object_6|scp096_skeleton|getup_panicstart_Object_6
+  - first:
+      74: 4949340821196716885
+    second: Object_6|scp096_skeleton|idle2_Object_6
+  - first:
+      74: 8119805617885749722
+    second: Object_6|scp096_skeleton|idle3_Object_6
+  - first:
+      74: 8284194234911051992
+    second: Object_6|scp096_skeleton|idle3_to_idle3end_Object_6
+  - first:
+      74: -4394425230569072302
+    second: Object_6|scp096_skeleton|idle3end2_Object_6
+  - first:
+      74: 6622161549239806492
+    second: Object_6|scp096_skeleton|idle3end_Object_6
+  - first:
+      74: 9171981510490380165
+    second: Object_6|scp096_skeleton|idle3lookaround_Object_6
+  - first:
+      74: -2888537644260997686
+    second: Object_6|scp096_skeleton|panic_Object_6
+  - first:
+      74: 6932148637279238807
+    second: Object_6|scp096_skeleton|panicend_Object_6
+  - first:
+      74: -437190673991090860
+    second: Object_6|scp096_skeleton|panicstart_Object_6
+  - first:
+      74: -5409453829035438250
+    second: Object_6|scp096_skeleton|running_Object_6
+  - first:
+      74: -6679619640078088827
+    second: Object_6|scp096_skeleton|sit2_Object_6
+  - first:
+      74: -2750964824575648963
+    second: Object_6|scp096_skeleton|sit2end_Object_6
+  - first:
+      74: 8579992349394185177
+    second: Object_6|scp096_skeleton|sit2start_Object_6
+  - first:
+      74: -4778416795652869929
+    second: Object_6|scp096_skeleton|sit_Object_6
+  - first:
+      74: 1910237140158408056
+    second: Object_6|scp096_skeleton|sitback_Object_6
+  - first:
+      74: 3225168907856566037
+    second: Object_6|scp096_skeleton|teslagatehit_Object_6
+  - first:
+      74: 8151813331774753773
+    second: Object_6|scp096_skeleton|walk2_Object_6
+  - first:
+      74: -1982825754759674957
+    second: Object_6|scp096_skeleton|walk2end_Object_6
+  - first:
+      74: 1736401863255752642
+    second: Object_6|scp096_skeleton|walk2start_Object_6
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

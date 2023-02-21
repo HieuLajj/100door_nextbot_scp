@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e449f0f4925c7439fc4453f03267e5, type: 3}
+  m_Name: Nextbot
+  m_EditorClassIdentifier: 
+  Datas:
+  - type: image
+    Name: Nerd
+    Sprite: {fileID: 21300000, guid: 81a7b529932731646a9faa952c9138b3, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 6a63d41f0c2f1b2489dff902a035d3fc, type: 3}
+  - type: image
+    Name: Sanic
+    Sprite: {fileID: 21300000, guid: 83ca9dc4fc0f74f41ab09c8621cd2f46, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 6725f922dacac3b4992ae47eccc8fef2, type: 3}
+  - type: image
+    Name: aioshi
+    Sprite: {fileID: 21300000, guid: d9a367c1bcf55cc468ff6cd47da4a6a6, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: c2e1e09f2f74542429ba84eac1260e8f, type: 3}
+  - type: image
+    Name: chinese
+    Sprite: {fileID: 21300000, guid: fb34b49148f38b34baadc59e6bce777c, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 235c8bab5a912b44c859f0381b74890e, type: 3}
+  - type: video
+    Name: chinesedance
+    Sprite: {fileID: 0}
+    Clip: {fileID: 32900000, guid: 7af7be6c16bb52a49963fc7a5ebaf882, type: 3}
+    audioClip: {fileID: 8300000, guid: 5726332f43fedaf4498953ad52135c6e, type: 3}
+  - type: image
+    Name: gigachad
+    Sprite: {fileID: 21300000, guid: b73f97b0f0438d043b52a053cbebf1c4, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 46ab6fb499414b648ba6980a694e85b4, type: 3}
+  - type: image
+    Name: the rock
+    Sprite: {fileID: 21300000, guid: 5805adb175dee9a40907f7b9cb209652, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 3243aef6957af6c41889fb9a79081a3e, type: 3}
+  - type: image
+    Name: uncanny
+    Sprite: {fileID: 21300000, guid: d4996c280e263e4438cc13160d384266, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: e19c9cb501445144aaed3c0a001c3755, type: 3}
+  - type: image
+    Name: speed
+    Sprite: {fileID: 21300000, guid: 58143e47eb902e443954db113d7079ee, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 9dc4048166b7cfc45bda1898bb55ccda, type: 3}
+  - type: image
+    Name: polite cat
+    Sprite: {fileID: 21300000, guid: d88e097623542494f83c87591797827e, type: 3}
+    Clip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 8255f7345d4b8da4997d34d44cf42622, type: 3}

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547b4abcb461437498083bad4f4bbd09, type: 3}
+  m_Name: Hero
+  m_EditorClassIdentifier: 
+  Datas:
+  - id: 0
+    name: batman
+    materialhero: {fileID: 2100000, guid: cbf01e08a0321bc478c1ae0d5a5323f5, type: 2}
+    spritehero: {fileID: 21300000, guid: d062af7b9c5c4894eb0d2b80327ecd7a, type: 3}
+    type: 0
+    money: 0
+  - id: 1
+    name: cap
+    materialhero: {fileID: 2100000, guid: f34db423307291448b4ec4fcbce6dc4e, type: 2}
+    spritehero: {fileID: 21300000, guid: 75e08bfa1e2596543bd587b760a46604, type: 3}
+    type: 0
+    money: 0
+  - id: 2
+    name: cell
+    materialhero: {fileID: 2100000, guid: 1e0e8b29d671a674fb96f941323a4b7a, type: 2}
+    spritehero: {fileID: 21300000, guid: 05c3653e925b8f44a8a6e6b0db9670e7, type: 3}
+    type: 1
+    money: 0
+  - id: 0
+    name: hulk
+    materialhero: {fileID: 2100000, guid: b16e346cc1052ba47bd9da7d59d02ed3, type: 2}
+    spritehero: {fileID: 21300000, guid: 1a8b959972f0c8b44a74d79b791ccb3e, type: 3}
+    type: 0
+    money: 0
+  - id: 3
+    name: loki
+    materialhero: {fileID: 2100000, guid: 70fa20a376f9a0b4ebee594d572ceaa0, type: 2}
+    spritehero: {fileID: 21300000, guid: 9c45a1d7238040d48a5b5b00fd2fe3af, type: 3}
+    type: 1
+    money: 0
+  - id: 4
+    name: deep
+    materialhero: {fileID: 2100000, guid: 013305a6db30b764aac2328bb520be04, type: 2}
+    spritehero: {fileID: 21300000, guid: 1e5e1c702e87e904c8b9fd1835ecbee8, type: 3}
+    type: 0
+    money: 0
+  - id: 5
+    name: thor
+    materialhero: {fileID: 2100000, guid: e806cb2e53c30214bbfdf32f1e108be7, type: 2}
+    spritehero: {fileID: 21300000, guid: 0ee5602b902e7e743b2840e77e5a40cb, type: 3}
+    type: 2
+    money: 50
+  - id: 6
+    name: antman
+    materialhero: {fileID: 2100000, guid: 555f9640815b63640b45a3879f7cc6d9, type: 2}
+    spritehero: {fileID: 21300000, guid: 39917fff475ebcc4eaf6d84c6b60c9a1, type: 3}
+    type: 2
+    money: 1000
