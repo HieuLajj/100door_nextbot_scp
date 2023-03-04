@@ -10,6 +10,7 @@ public class DoorMain : MonoBehaviour
     public TMP_Text tMP_Text;
     public Door DoorMainforMap;
     public int IndexRoomDoorNumber;
+    public int FakeDoor = 0;
     public void SetDoor(int h){
         IndexDoor = h;
         IndexRoomDoorNumber = GameControll.Instance.FlagRoom * 4 + h;

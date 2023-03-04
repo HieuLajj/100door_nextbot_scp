@@ -23,6 +23,10 @@ public class Map : MonoBehaviour
     public ActiveTriggerEnemy ActiveEnemy;
     public chaseActiveCeiling ChaseActiveCeilingFire;
     public TriggerDecor TriggerDecorRoom;
+    
+    //map4
+    public GameObject[] PositionsDoor;
+    public GameObject[] DoorsMulti;
     public void BakeMap(){
         surfaces.ForEach(s=>s.BuildNavMesh());    
     }
@@ -38,6 +42,13 @@ public class Map : MonoBehaviour
         GameControll.Instance.KeysUI.SetActive(true);
         doorMaininMap.FlagKeyOpen = 1;
         SpawnKey();
+    }
+
+    public void SetupMap4(){
+        int [] arr = ShuffleArray.Shuffle(new[]{0,1,2});
+        for(int i=0; i< DoorsMulti.Length; i++){
+            DoorsMulti[i].transform.position = PositionsDoor[arr[i]].transform.position;
+        }
     }
     public void SpawnKey(){
         //resetKeytruocdo
@@ -64,6 +75,12 @@ public class Map : MonoBehaviour
         PlayerController.Instance.SpawnEyesInWall.gameObject.SetActive(false);
         TimelineStart.Instance.scpMain.CheckActive = false;
         DisActiveHand();
+    }
+
+    public void ResetMap4(){
+        for(int i=0 ; i< DoorsMulti.Length;i++){
+            DoorsMulti[i].GetComponent<DoorMain>().ResetMap();
+        }
     }
 
     public void ActiveHand(){

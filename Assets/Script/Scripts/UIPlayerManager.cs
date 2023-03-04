@@ -11,8 +11,8 @@ public class UIPlayerManager : MonoBehaviour
     public bool CheckSpeed;
     public RigidbodyFirstPersonController _rigidbodyFirstPersonController;
     // public PlayerController playerController;
-    public TextMeshProUGUI mText;
-    public TextMeshProUGUI mLight;
+    public Image mSpeed;
+    public Image mLight;
     public Button LightButton;
     public bool CheckLight;
     public GameObject LightSpot;
@@ -58,19 +58,19 @@ public class UIPlayerManager : MonoBehaviour
     }
     public void OnLight(){
         LightSpot.SetActive(true);
-        mLight.text  = "Off";
+        mLight.color  = Color.yellow;
     }
     public void OffLight(){
         LightSpot.SetActive(false);
-        mLight.text  = "On";
+        mLight.color  = Color.white;
     }
     public void ResetS(){
         _rigidbodyFirstPersonController.ResetSpeed();
-        mText.text = "Up";
+        mSpeed.color = Color.white;
     }
     public void RaiseS(){
         _rigidbodyFirstPersonController.RaiseSpeed();
-        mText.text = "Reduce";
+        mSpeed.color = Color.yellow;
     }
     
     public void ActiveKey(){

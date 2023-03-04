@@ -52,8 +52,17 @@ public class Door : MonoBehaviour
                 float dot = Vector3.Dot(Forward, (UserPosition - transform.position).normalized);
                 
                 if(GameControll.Instance.Mod == 5){
-                    if(dot>0){
-                        GameControll.Instance.GameActiveMapGo(doorMain.IndexDoor);
+                    if (doorMain.FakeDoor==1){
+                        Debug.Log("Ban da chon sai cua");
+                        GameControll.Instance.switchCamera.cameraPositionChange(1);
+                        LookAtTargetCamera.Instance.CheckActiveFollow = false;
+                        GameControll.Instance.ThrowPlayer = Vector3.zero;
+                        LookAtTargetCamera.Instance.TimelineDestroy();
+                        GameControll.Instance.Player.GetComponent<RigidbodyFirstPersonController>().CheckDestroy = true;
+                    }else{
+                        if(dot>0){
+                            GameControll.Instance.GameActiveMapGo(doorMain.IndexDoor);
+                        }
                     }
                     // else{
                     //     GameControll.Instance.GameActiveMapBack(doorMain.IndexDoor);

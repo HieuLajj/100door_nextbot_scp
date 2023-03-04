@@ -361,14 +361,29 @@ public class GameControll : MonoBehaviour
             GameObject g = Maps100door.GetChild(flag).gameObject;
             Map map2 = g.GetComponent<Map>();
             map2.LastBrick.SetActive(false);
-            if(map2.GamePlay==5){
-                map2.ResetMapChase();
+            switch(map2.GamePlay){
+                case 1:
+                    if(map2.TriggerDecorRoom!=null){
+                        map2.TriggerDecorRoom.ResetActive();
+                    }
+                    break;
+                case 4:
+                    map2.ResetMap4();
+                    break;
+                case 5:
+                    map2.ResetMapChase();
+                    break;
+                default:
+                    break;
             }
-            if(map2.GamePlay==1){
-                if(map2.TriggerDecorRoom!=null){
-                    map2.TriggerDecorRoom.ResetActive();
-                }
-            }
+            // if(map2.GamePlay==5){
+            //     map2.ResetMapChase();
+            // }
+            // if(map2.GamePlay==1){
+            //     if(map2.TriggerDecorRoom!=null){
+            //         map2.TriggerDecorRoom.ResetActive();
+            //     }
+            // }
 
             if(flagOverIndexLastRoom==0){
                 map2.doorMaininMap.SetDoor(i+1);
@@ -406,10 +421,10 @@ public class GameControll : MonoBehaviour
             if(i<1){
                 map1.SetActive(true);
                 map2.doorMaininMap.ResetMap();
-                map2.SettingLaimRoomm.SetupLightRoom();
+                map2?.SettingLaimRoomm.SetupLightRoom();
             }else{
                 map1.SetActive(false);
-                map2.SettingLaimRoomm.ResetLightRoom();
+                map2?.SettingLaimRoomm.ResetLightRoom();
             }
         }
     }
@@ -735,20 +750,36 @@ public class GameControll : MonoBehaviour
         if(a<0) a=0;
           if(a!=h){
             Map map = MapInGame[a].GetComponent<Map>();
-            if(map.GamePlay==5){
-                map.ResetMapChase();
+
+            switch(map.GamePlay){
+                case 1:
+                    if(map.TriggerDecorRoom!=null){
+                        map.TriggerDecorRoom.ResetActive();
+                    }
+                    break;
+                case 4:
+                    map.ResetMap4();
+                    break;
+                case 5:
+                    map.ResetMapChase();
+                    break;
+                default:
+                    break;
             }
-            if(map.GamePlay==1){
-                if(map.TriggerDecorRoom!=null){
-                    map.TriggerDecorRoom.ResetActive();
-                }
-            }
+            // if(map.GamePlay==5){
+            //     map.ResetMapChase();
+            // }
+            // if(map.GamePlay==1){
+            //     if(map.TriggerDecorRoom!=null){
+            //         map.TriggerDecorRoom.ResetActive();
+            //     }
+            // }
             MapInGame[a].gameObject.SetActive(false);
             if(a==0){
                 map.LastBrick.SetActive(false);
             }
             MapInGame[h].GetComponent<Map>().LastBrick.SetActive(true);
-            map.SettingLaimRoomm.ResetLightRoom();
+            map?.SettingLaimRoomm.ResetLightRoom();
             }
         int b = h+1;
         if(b>=MapInGame.Count){
@@ -758,7 +789,7 @@ public class GameControll : MonoBehaviour
             MapInGame[b].gameObject.SetActive(true);
             Map map2  = MapInGame[b].GetComponent<Map>();
             map2.doorMaininMap.ResetMap();
-            map2.SettingLaimRoomm.SetupLightRoom();
+            map2?.SettingLaimRoomm.SetupLightRoom();
             if(map2.doorMaininMap.IndexRoomDoorNumber>=100){
                 WinGame();
             }
@@ -796,15 +827,30 @@ public class GameControll : MonoBehaviour
                     Map map = g.GetComponent<Map>();
                     map.SettingLaimRoomm.ResetLightRoom();
                     map.LastBrick.SetActive(false);
-                    if(map.GamePlay==5){
-                        map.ResetMapChase();
-                        TimelineStart.Instance.scpMain.CheckActive = false;
+                    switch(map.GamePlay){
+                        case 1:
+                            if(map.TriggerDecorRoom!=null){
+                                map.TriggerDecorRoom.ResetActive();
+                            }
+                            break;
+                        case 4:
+                            map.ResetMap4();
+                            break;
+                        case 5:
+                            map.ResetMapChase();
+                            break;
+                        default:
+                            break;
                     }
-                    if(map.GamePlay==1){
-                        if(map.TriggerDecorRoom!=null){
-                            map.TriggerDecorRoom.ResetActive();
-                        }
-                    }
+                    // if(map.GamePlay==5){
+                    //     map.ResetMapChase();
+                    //     TimelineStart.Instance.scpMain.CheckActive = false;
+                    // }
+                    // if(map.GamePlay==1){
+                    //     if(map.TriggerDecorRoom!=null){
+                    //         map.TriggerDecorRoom.ResetActive();
+                    //     }
+                    // }
                     g.SetActive(false);
                 //}
             }
@@ -860,6 +906,9 @@ public class GameControll : MonoBehaviour
                 map2.SetUpMapGameMode1and2(); 
                 ActionAnimationLightRemix();
                 NotificationUI.Instance.SendNotofication("FIND THE KEY TO OPEN DOOR");
+                break;
+            case 4:
+                map2.SetupMap4();
                 break;
             case 2:
                 GameControll.Instance.KeysUI.SetActive(false);
